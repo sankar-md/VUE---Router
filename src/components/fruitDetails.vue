@@ -1,5 +1,5 @@
 <template>
-  <div>this is {{ id }}</div>
+  <div>{{ id }}</div>
 </template>
 
 <script>
