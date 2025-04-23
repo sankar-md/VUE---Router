@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AboutView from "../views/AboutView.vue";
 import HomeComponent from "@/components/HomeComponent.vue";
+import FruitBox from "@/components/fruitBox.vue";
+import FruitDetails from "@/components/fruitDetails.vue";
 
 const routes = [
   {
@@ -12,6 +14,16 @@ const routes = [
     path: "/about",
     name: "about",
     component: AboutView,
+  },
+  {
+    path: "/fruitBox",
+    name: "fruitBox",
+    component: FruitBox,
+  },
+  {
+    path: "/fruitBox/:id",
+    name: "fruitDetails",
+    component: FruitDetails,
   },
 ];
 
